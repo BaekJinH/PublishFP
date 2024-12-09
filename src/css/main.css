@@ -108,7 +108,7 @@ main section { width: 100vw; height:100vh; }
 #skills ul li .round { position: absolute; opacity: 0; display: none; }
 #skills ul li.active.view .round { display: block; width: 115%; height: 115%; opacity: 1; position: absolute; transform: rotate(-90deg); }
 #skills ul li .view_text { display: none; }
-#skills ul li > p { z-index: 100;  }
+#skills ul li > p { z-index: 100; color:var(--body-main-color)  }
 #skills ul li.active > p { transition: font-size .1s ease-in-out; }
 #skills ul li:nth-child(1).active > p { color:#fff; }
 #skills ul li.active:hover > p { font-size:22px; }
@@ -256,6 +256,8 @@ main section { width: 100vw; height:100vh; }
   #skills ul li.active.view { flex-flow: row wrap; align-items: center; justify-content: center; }
   #skills ul li.active.view .round { display: none; }
   #skills ul li.active.view .view_text { position: static; font-size:15px; transform:none; text-align: center; }
+  #skills ul li:before { content:none !important; }
+  #skills ul li:nth-child(1).active > p { color:var(--body-main-color) }
 
   #contact .contact-list a { font-size:18px; }
 }
