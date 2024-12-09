@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>웹퍼블리셔 포트폴리오</title>
+  <link rel="stylesheet" href="./src/style/reset.css">
+  <link rel="stylesheet" href="./src/style/fonts.css">
+  <link rel="stylesheet" href="./src/css/main.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.0/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+  <script src="./src/js/main.js"></script>
+  <script src="./src/js/circleCalc.js"></script>
+  <script src="./src/js/blossom.js"></script>
+  <script src="./src/js/endSectionBlossom.js"></script>
+</head>
+<body>
+  <div class="landing-page">
+    <div class="inner">
+      <h2>
+        감각있는 퍼블리셔
+        <br>
+        <span>탐나지 않으신가요?</span>
+      </h2>
+    </div>
+  </div>
+  <nav class="fixed-nav">
+    <ul class="section-nav">
+      <li><a href="#intro">Intro</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="intro">
+      <div class="text">
+        <p>
+          감사합니다.
+          <br>
+          아래로 스크롤을 내려주세요!
+        </p>
+      </div>
+      <div class="blossom-tree"></div>
+      <div id="blossom_container"></div>
+      <!-- <div class="waveWrap">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(173, 169, 255,0.6)"></use>
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(173, 169, 255,1)"></use>
+            </g>
+        </svg>
+      </div> -->
+    </section>
+    <section id="about">
+      <div class="inner">
+        <div class="profile">
+          <svg id="svg" viewBox="0 0 1000 1000">
+            <defs>
+              <clipPath id="clip-path">
+                <path class="blob cls-1" d="M87.498418 549.961076 C 72.05837483333333 473.5755261666667 88.49174833333333 371.850641 124.539211 299.535012 160.58667366666666 227.219383 231.32659183333334 153.12366883333334 303.783194 116.067302 376.2397961666666 79.01093516666666 485.4049088333333 56.93174666666666 559.278824 77.196811 633.1527391666666 97.46187533333332 689.6801808333333 179.120214 747.026685 237.657688 804.3731891666667 296.195162 889.7919451666667 356.96903599999996 903.357849 428.421655 916.9237528333333 499.874274 867.3827383333334 596.0046935 828.422108 666.373402 789.4614776666666 736.7421105000001 735.9283918333333 820.8569918333334 669.594067 850.633906 603.2597421666667 880.4108201666667 505.8185918333333 860.4991528333334 430.416159 845.034887 355.0137261666667 829.5706211666667 274.33242683333333 807.0272795 217.17947 757.848311 160.0265131666667 708.6693425 102.93846116666667 626.3466258333334 87.498418 549.961076z"></path>
+              </clipPath>
+            </defs>
+            <g clip-path="url(#clip-path)" class="cls-2">
+              <image width="1000" height="1000" xlink:href="./src/image/profile_2.jpg" alt="Profile Image"></image>
+            </g>
+          </svg>
+        </div>
+        <p>
+          방문해주셔서 감사합니다.
+          <br>
+          프론트엔드 신입, 웹 퍼블리셔 경력직 
+          <br>
+          백진혁입니다.
+          <br>
+          <br>
+          인터랙티브한 효과를 만드는 것을 좋아하며
+          <br>
+          마음에 드는 것은 수십번을 다르게 작성해 
+          <br>
+          코드를 음미하는 것을 좋아합니다.
+        </p>
+      </div>
+    </section>
+    <section id="skills">
+      <div>
+        <h3>
+          <span>저</span>
+          <span>는</span>
+          <span>이</span>
+          <span>걸</span>
+          <span>잘</span>
+          <span>해</span>
+          <span>요</span>
+          <span>!</span>
+        </h3>
+        <ul>
+          <li class="skill" data-percent="60">
+            <svg class="round" viewBox="0 0 100 100" width="200" height="200">
+              <circle class="circle" cx="50" cy="50" r="40" />
+            </svg>
+            <p>Photoshop</p>
+            <div class="view_text">
+              <p>
+                디자이너와의 협업을 위한
+                <br>
+                기본적인 Photoshop 사용 능력을 갖추고 있습니다.</p>
+            </div>
+          </li>
+          <li class="skill" data-percent="90">
+            <svg class="round" viewBox="0 0 100 100" width="200" height="200">
+              <circle class="circle" cx="50" cy="50" r="40" />
+            </svg>
+            <p>
+              HTML / 
+              <br>
+              CSS(SCSS)
+            </p>
+            <div class="view_text">
+              <p>
+                웹 표준성 및 웹 접근성을 준수한 코드를 작성하며
+                <br>
+                간단한 CSS부터 CSS의 심화적인 기능까지 사용할 수 있습니다.
+              </p>
+            </div>
+          </li>
+          <li class="skill" data-percent="70">
+            <svg class="round" viewBox="0 0 100 100" width="200" height="200">
+              <circle class="circle" cx="50" cy="50" r="40" />
+            </svg>
+            <p>Figma</p>
+            <div class="view_text">
+              <p>
+                Photoshop뿐 아니라 디자이너와 협업하여
+                <br>
+                Figma를 통해 작업을 진행할 수 있습니다.
+              </p>
+            </div>
+          </li>
+          <li class="skill" data-percent="85">
+            <svg class="round" viewBox="0 0 100 100" width="200" height="200">
+              <circle class="circle" cx="50" cy="50" r="40" />
+            </svg>
+            <p>Javascript / 
+              <br>
+              Jquery</p>
+              <div class="view_text">
+                <p>
+                  Javascript와 Jquery를 사용해 
+                  <br>
+                  퍼블리싱 업무나 React 프로젝트를 진행하였고
+                  <br>
+                  특히 Jquery가 아닌 Javascript 사용에 깊은 이해를 갖추고 있습니다.
+                </p>
+              </div>
+          </li>
+          <li class="skill" data-percent="60">
+            <svg class="round" viewBox="0 0 100 100" width="200" height="200">
+              <circle class="circle" cx="50" cy="50" r="40" />
+            </svg>
+            <p>React</p>
+            <div class="view_text">
+              <p>
+                프론트엔드 신입 개발자를 준비했던 만큼
+                <br>
+                React를 사용해 개인 프로젝트를 여러 개 진행해보았고
+                <br>
+                여러 프로젝트를 통해 React에 대한 이해도를 높였습니다.
+              </p>
+            </div>
+          </li>
+          <li class="skill" data-percent="60">
+            <svg class="round" viewBox="0 0 100 100" width="200" height="200">
+              <circle class="circle" cx="50" cy="50" r="40" />
+            </svg>
+            <p>Json,
+              <br>
+              Ajax</p>
+              <div class="view_text">
+                <p>
+                  기본적인 API 통신과 
+                  <br>
+                  Json 파일 형식을 이해하고
+                  <br>
+                  비동기 통신을 이해하고 사용할 수 있습니다.
+                </p>
+              </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="inner">
+        <div class="container">
+          <h1 class="project-name">작업한 것들<br>보실래요?</h1>
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                <path fill="#FFFFFF" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
+                  c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
+                  l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
+                  c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
+                  c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z"/>
+                </svg>
+                </div>
+                <div class="timeline-content">
+                  <h2>리액트 포트폴리오</h2>
+                  <p>
+                    프론트엔드 신입 개발자로서 첫 포트폴리오를 만들어보았습니다.
+                  </p>
+                  <a href="https://baekjinh.github.io/FrontendFP/" target="_blank" class="btn">button</a>
+                </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                <g>
+                  <path fill="#FFFFFF" d="M17.92,3.065l-1.669-2.302c-0.336-0.464-0.87-0.75-1.479-0.755C14.732,0.008,7.653,0,7.653,0v5.6
+                    c0,0.096-0.047,0.185-0.127,0.237c-0.081,0.052-0.181,0.06-0.268,0.02l-1.413-0.64C5.773,5.183,5.69,5.183,5.617,5.215l-1.489,0.65
+                    c-0.087,0.038-0.19,0.029-0.271-0.023c-0.079-0.052-0.13-0.141-0.13-0.235V0H2.191C1.655,0,1.233,0.434,1.233,0.97
+                    c0,0,0.025,15.952,0.031,15.993c0.084,0.509,0.379,0.962,0.811,1.242l2.334,1.528C4.671,19.905,4.974,20,5.286,20h10.307
+                    c1.452,0,2.634-1.189,2.634-2.64V4.007C18.227,3.666,18.12,3.339,17.92,3.065z M16.42,17.36c0,0.464-0.361,0.833-0.827,0.833H5.341
+                    l-1.675-1.089h10.341c0.537,0,0.953-0.44,0.953-0.979V2.039l1.459,2.027V17.36L16.42,17.36z"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="timeline-content right">
+                <h2>국가교육위원회 리뉴얼</h2>
+                <p>
+                  완성되지 않은 기획과 디자인, 원활한 의사소통이 되지 않았음에도 끝까지 완성시킨 프로젝트입니다.
+                </p>
+                <a href="https://www.ne.go.kr/new/index.do" target="_blank" class="btn">button</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                  <path fill="#FFFFFF" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
+                      c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
+                      l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
+                      c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
+                      c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z"/>
+                </svg>
+              </div>
+              <div class="timeline-content">
+                <h2>용인시청 리뉴얼</h2>
+                <p>
+                  용인시청 홈페이지를 리뉴얼 및 유지보수하였습니다.
+                </p>
+                <a href="https://www.yongin.go.kr/intro/index.jsp" target="_blank" class="btn">button</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                <g>
+                  <path fill="#FFFFFF" d="M17.92,3.065l-1.669-2.302c-0.336-0.464-0.87-0.75-1.479-0.755C14.732,0.008,7.653,0,7.653,0v5.6
+                    c0,0.096-0.047,0.185-0.127,0.237c-0.081,0.052-0.181,0.06-0.268,0.02l-1.413-0.64C5.773,5.183,5.69,5.183,5.617,5.215l-1.489,0.65
+                    c-0.087,0.038-0.19,0.029-0.271-0.023c-0.079-0.052-0.13-0.141-0.13-0.235V0H2.191C1.655,0,1.233,0.434,1.233,0.97
+                    c0,0,0.025,15.952,0.031,15.993c0.084,0.509,0.379,0.962,0.811,1.242l2.334,1.528C4.671,19.905,4.974,20,5.286,20h10.307
+                    c1.452,0,2.634-1.189,2.634-2.64V4.007C18.227,3.666,18.12,3.339,17.92,3.065z M16.42,17.36c0,0.464-0.361,0.833-0.827,0.833H5.341
+                    l-1.675-1.089h10.341c0.537,0,0.953-0.44,0.953-0.979V2.039l1.459,2.027V17.36L16.42,17.36z"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="timeline-content right">
+                <h2>장애인고용공단 리뉴얼</h2>
+                <p>
+                  갑작스러운 파견 일정으로 작업 환경과 시간이 뒷받쳐 주지 않았음에도 불구하고 적은 인원으로 총 130페이지 가량을 작업하였습니다.
+                </p>
+                <a href="https://www.kead.or.kr/" target="_blank" class="btn">button</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                  <path fill="#FFFFFF" d="M19.998,6.766l-5.759-0.544c-0.362-0.032-0.676-0.264-0.822-0.61l-2.064-4.999
+                      c-0.329-0.825-1.5-0.825-1.83,0L7.476,5.611c-0.132,0.346-0.462,0.578-0.824,0.61L0.894,6.766C0.035,6.848-0.312,7.921,0.333,8.499
+                      l4.338,3.811c0.279,0.246,0.395,0.609,0.314,0.975l-1.304,5.345c-0.199,0.842,0.708,1.534,1.468,1.089l4.801-2.822
+                      c0.313-0.181,0.695-0.181,1.006,0l4.803,2.822c0.759,0.445,1.666-0.23,1.468-1.089l-1.288-5.345
+                      c-0.081-0.365,0.035-0.729,0.313-0.975l4.34-3.811C21.219,7.921,20.855,6.848,19.998,6.766z"/>
+                </svg>
+              </div>
+              <div class="timeline-content">
+                <h2>경찰청 리뉴얼</h2>
+                <p>
+                  경찰청 홈페이지를 리뉴얼 및 유지보수하였습니다.
+                </p>
+                <a href="https://www.police.go.kr/index.do" target="_blank" class="btn">button</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  width="21px" height="20px" viewBox="0 0 21 20" enable-background="new 0 0 21 20" xml:space="preserve">
+                <g>
+                  <path fill="#FFFFFF" d="M17.92,3.065l-1.669-2.302c-0.336-0.464-0.87-0.75-1.479-0.755C14.732,0.008,7.653,0,7.653,0v5.6
+                    c0,0.096-0.047,0.185-0.127,0.237c-0.081,0.052-0.181,0.06-0.268,0.02l-1.413-0.64C5.773,5.183,5.69,5.183,5.617,5.215l-1.489,0.65
+                    c-0.087,0.038-0.19,0.029-0.271-0.023c-0.079-0.052-0.13-0.141-0.13-0.235V0H2.191C1.655,0,1.233,0.434,1.233,0.97
+                    c0,0,0.025,15.952,0.031,15.993c0.084,0.509,0.379,0.962,0.811,1.242l2.334,1.528C4.671,19.905,4.974,20,5.286,20h10.307
+                    c1.452,0,2.634-1.189,2.634-2.64V4.007C18.227,3.666,18.12,3.339,17.92,3.065z M16.42,17.36c0,0.464-0.361,0.833-0.827,0.833H5.341
+                    l-1.675-1.089h10.341c0.537,0,0.953-0.44,0.953-0.979V2.039l1.459,2.027V17.36L16.42,17.36z"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="timeline-content right">
+                <h2>성남시청 온라인 신청 제작</h2>
+                <p>
+                  성남시청 온라인 신청 페이지를 제작하였습니다.
+                </p>
+                <a href="https://www.seongnam.go.kr/apply" target="_blank" class="btn">button</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-content blank">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div id="end-blossom"></div>
+
+      <div class="special-content">
+        <div></div>
+        <div class="tw"></div>
+        <div class="th"></div>
+        <div class="fo"></div>
+        <div class="th"></div>
+        <div class="tw"></div>
+        <div></div>
+      </div>
+      <ul class="contact-list">
+        <li class="th"><div class="inner-wrap"><a href="mailto:wlsgur_bloom@naver.com">wlsgur_bloom@naver.com</a></div></li>
+        <li class="fo"><div class="inner-wrap"><a href="tel:01086816741">010-8681-6741</a></div></li>
+        <li class="th"><div class="inner-wrap"><a href="https://likeable-palladium-d6b.notion.site/115296ec05af800e81e4c435054dd918?pvs=4">이력서 링크</a></div></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
