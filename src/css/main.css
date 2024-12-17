@@ -77,7 +77,7 @@ main section { width: 100vw; height:100vh; }
 /* section 3 */
 #skills { width:100%; min-height: 100vh; position: relative; } 
 #skills > div { display: flex; flex-flow: column wrap; position: absolute;  top:50%; left:50%; transform: translate(-50%, -50%); min-width: 1200px; height: 500px; }
-#skills h3 { font-size:24px; }
+#skills h3 { font-size:30px; }
 #skills h3 span { transition: all .3s ease-in-out; opacity: 0; transform:translateY(0px); display: inline-block; }
 #skills h3 span ~ span { margin-left:-1px;  }
 #skills h3 span.visible { opacity: 1; transform:translateY(-5px); }
