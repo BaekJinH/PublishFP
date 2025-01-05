@@ -40,46 +40,43 @@ document.addEventListener('DOMContentLoaded', () => {
   const observerOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5 
+    threshold: 0.3 
   };
 
   const observerCallback = (entries, observer) => {
     entries.forEach(entry => {
-      if (isMobileView()) {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            navItems.forEach(item => item.style.opacity = '0');
-            const currentNavItem = document.querySelector(`.section-nav li a[href="#${entry.target.id}"]`).parentElement;
-            if (currentNavItem) {
-              currentNavItem.style.opacity = '1';
-            }
-          }
-        });
+      // 모바일 뷰일 때 opacity 처리
+      if (isMobileView() && entry.isIntersecting) {
+        navItems.forEach(item => item.style.opacity = '0');
+        const currentNavItem = document.querySelector(`.section-nav li a[href="#${entry.target.id}"]`).parentElement;
+        if (currentNavItem) {
+          currentNavItem.style.opacity = '1';
+        }
       }
+
+      // current 클래스 처리
       if (entry.isIntersecting) {
         navItems.forEach(item => item.classList.remove('current'));
-
         const currentNavItem = document.querySelector(`.section-nav li a[href="#${entry.target.id}"]`).parentElement;
         if (currentNavItem) {
           currentNavItem.classList.add('current');
         }
 
+        // skills 섹션 관련 처리
         if (entry.target.id === 'skills') {
           spans.forEach((span, index) => {
             const timeoutId = setTimeout(() => {
               span.classList.add('visible');
             }, index * 200);
-            timeoutIds.push(timeoutId); 
+            timeoutIds.push(timeoutId);
           });
         }
-      } else {
-        if (entry.target.id === 'skills') {
-          timeoutIds.forEach(id => clearTimeout(id)); 
-          timeoutIds = []; 
-          spans.forEach(span => {
-            span.classList.remove('visible');
-          });
-        }
+      } else if (entry.target.id === 'skills') {
+        timeoutIds.forEach(id => clearTimeout(id));
+        timeoutIds = [];
+        spans.forEach(span => {
+          span.classList.remove('visible');
+        });
       }
     });
   };
